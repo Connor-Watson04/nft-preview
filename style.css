@@ -1,0 +1,130 @@
+*/ {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: aliceblue;
+  background-color: hsl(217, 54%, 11%);
+}
+
+.container {
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0 5rem 2rem;
+}
+
+.image {
+  height: 300px;
+  width: auto;
+  border-radius: 11px;
+  z-index: 1;
+  /* position: relative; */
+}
+
+.eye {
+  opacity: 0;
+}
+
+.eye-container {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eye-container:hover {
+  background-color: hsla(178, 100%, 50%, 0.274);
+  visibility: visible;
+  cursor: pointer;
+}
+
+.eye-container:hover svg {
+  opacity: 1;
+}
+
+.heading-primary:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.full {
+  width: 300px;
+  border-radius: 11px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 1.6rem;
+}
+.text {
+  line-height: 1.4rem;
+  color: hsl(215, 51%, 70%);
+}
+
+.grid {
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 1rem;
+}
+
+.time {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: hsl(215, 51%, 70%);
+  text-align: end;
+  gap: 3px;
+}
+
+.metric {
+  display: flex;
+  align-items: center;
+  color: hsl(178, 100%, 50%);
+  gap: 7px;
+  font-weight: 500;
+}
+
+.creator {
+  border-top: 1px solid hsl(215, 51%, 70%);
+  height: 50px;
+  display: grid;
+  grid-template-columns: 50px 83px 100px;
+  align-items: center;
+  padding-top: 0.8rem;
+}
+
+.image-avatar {
+  height: 30px;
+  width: auto;
+  border: 2px solid;
+  border-color: aliceblue;
+  border-radius: 50%;
+}
+
+.creator-text {
+  color: hsl(215, 51%, 70%);
+}
+
+.name:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+@media (max-width: 426px) {
+  body {
+    overflow-x: hidden;
+  }
+  .container {
+    margin: 5rem 2rem 5rem 1rem;
+    width: auto;
+    display: block;
+  }
+  .full {
+    box-shadow: 20px 18px 10px hsl(219, 93%, 6%);
+  }
+}
